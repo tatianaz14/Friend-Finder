@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* home background */
+body.home {
+    background: url(./images/friend-finder-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home-container, #survey-container{  
+    opacity: 0.8;
+    filter: alpha(opacity=50); 
+}
+
+.jumbotron {
+    background-color: #df0e62;
+}
+
+#home-button {
+    color: #ffffff;
+    background-color: #fac70b;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#home-button:hover {
+    color: #df0e62;
+    border: 2px solid #df0e62; 
+    background-color: #ffffff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Survey Page */
+.navbar {
+    margin-bottom: 30px;
+    background-color: #df0e62;
+}
+
+.form-container {
+    margin: auto;
+    width: 50%;
+    border: 3px solid #df0e62;
+}
+
+.footer {
+    background-color: #df0e62;
+}
+
+#submit {
+    background-color: #fac70b;
+    border: none;
+
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Friend Finder Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <h3 class="navbar-brand pull-right text-white">Survey Questions</h3>
+        <div class="navbar-header">
+            <a class="navbar-brand pull-right" href="/home">
+                <button class="btn btn-lg" id="home-button">
+                    <span class="fa fa-home"></span>
+                </button>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Survey form -->
+    <div class="form-container">
+        <div class="row">
+            <div class="col-lg">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="" class="needs-validation" novalidate>
+                            <h4>About You</h4>
+                            <br>
+                            <div class="col-lg-12 col-md-4 mb-3">
+                                <label for="name">
+                                    <h6>Name (Required)</h6>
+                                </label>
+                                <input type="text" class="form-control" id="name" required>
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-4 mb-3">
+                                <label for="photo">
+                                    <h6>Link to Photo Image (Required)</h6>
+                                </label>
+                                <input type="text" class="form-control" id="photo" required>
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <hr>
+                            <h4>Questions:</h4>
+                            <br>
+                            <h6>You get stressed out easily if things aren't working out as expected</h6>
+                            <select class="custom-select" id="q1" required>
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                            <br><br>
+                            <h6>You get along with people and thrive in group settings</h6>
+                            <select class="custom-select" id="q2" required>
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                            <br><br>
+                            <h6>Strong morals are very important</h6>
+                            <select class="custom-select" id="q3" required>
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                            <br><br>
+                            <h6>You are a supportive friend</h6>
+                            <select class="custom-select" id="q4" required>
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                            <br><br>
+                            <h6>You love to take care of people around you</h6>
+                            <select class="custom-select" id="q5" required>
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                            <br><br>
+                            <h6>You love the outdoors and have an adventurous energy</h6>
+                            <select class="custom-select" id="q6" required>
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                            <br><br>
+                            <h6>You would choose a night in with a good book rather than going out to a party</h6>
+                            <select class="custom-select" id="q7" required>
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                            <br><br>
+                            <h6>You love being the center of attention</h6>
+                            <select class="custom-select" id="q8" required>
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                            <br><br>
+                            <h6>You love cats</h6>
+                            <select class="custom-select" id="q9" required>
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                            <br><br>
+                            <h6>You welcome constructive criticism</h6>
+                            <select class="custom-select" id="q10" required>
+                                <option selected>Select an Option</option>
+                                <option value="1">One (Strongly Disagree)</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five (Strongly Agree)</option>
+                            </select>
+                            <br><br>
+                            <button type="submit" data-target="results-modal" class="btn btn-primary btn-lg btn-block"
+                                id="submit"><i class="fa fa-check-circle"></i> Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Modal -->
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Meet Your Most Compatible Friend:</h4>
+                </div>
+                <div class="modal-body">
+                    <h2 class="text-center" id="match-name"></h2>
+                    <img class="img-fluid" id="match-img" src="" alt="Responsive image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="close-modal" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer py-3">
+        <div class="container">
+            <a href="/api/friends" style="color:#fac70b; text-decoration:none;">API Friends List |
+            </a><a href="https://github.com/fernandamarr/friend-finder" target="_blank" style="color:#fac70b; text-decoration:none;">GitHub
+                Repo</a>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // website URL
+        var currentURL = window.location.origin;
+
+        // Handles how form is sent to server
+        $("#submit").on("click", (event) => {
+            event.preventDefault();
+
+            if (($("#name").val().trim() !== "") && ($("#photo").val().trim() !== "")) {
+                // Grab form elements
+                var userData = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [
+                        $("#q1").val().trim(),
+                        $("#q2").val().trim(),
+                        $("#q3").val().trim(),
+                        $("#q4").val().trim(),
+                        $("#q5").val().trim(),
+                        $("#q6").val().trim(),
+                        $("#q7").val().trim(),
+                        $("#q8").val().trim(),
+                        $("#q9").val().trim(),
+                        $("#q10").val().trim()
+                    ]
+                };
+
+                // testing
+                // console.log("user: " + JSON.stringify(userData));
+
+                // Add user input to friend list
+                $.post("/api/friends", userData, (data) => {
+                    console.log('response = ' + JSON.stringify(data));
+
+                    // Grab results from best match
+                    // Set name and photo values
+                    $("#match-name").text(data.name);
+                    $("#match-img").attr("src", data.photo);
+                    $("#results-modal").modal("show");
+                    // $('#results-modal').modal('open');
+
+
+                    // clear input fields
+                    $("#name").val("");
+                    $("#photo").val("");
+                });
+            } else {
+                $(".modal-title").text("Some information is missing");
+                $(".modal-body").html(
+                    "<h6>Please complete the Survey and submit.</h6>"
+                );
+                $("#results-modal").modal('toggle');
+            }
+            return false;
+        });
+
+        // close modal logic
+        $("close-modal").on("click", (event) => {
+            $.get("/", (req, res) => {
+                location.replace(res);
+            })
+        });
+    });
+</script>
